@@ -37,7 +37,7 @@ public class StudentsController {
 
     }
 
-    @PutMapping("/update")
+    @PutMapping("/updatestudentdetails")
     public Students updateStudent(@RequestParam int id, @RequestBody Students students) {
         students.setRollno(id);
         return studentsServices.updateStudent(students);
